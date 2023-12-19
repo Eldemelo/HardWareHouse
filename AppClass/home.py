@@ -13,9 +13,13 @@ class homePage(customtkinter.CTkFrame):
             self.initializeDatabase()
         return
 
-            #Maybe? Future use - PB
+    #TODO Add Pyodbc connection for database
+    def connectDB(self):
+        pyodbc.connect(
+            user = "user",
+            password = "password"
+        )
                
-
     # Function to intialize the database
     def initializeDatabase(self):
         print("test")
