@@ -1,4 +1,5 @@
 import customtkinter
+import home
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -6,12 +7,12 @@ class App(customtkinter.CTk):
 
         # Assign information to the window
         self.title("HardWareHouse")
-        self.geometry("1920x1080")
+        self.geometry("1280x720")
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        # Open the window
-        self
+        # Open the Home Frame
+        self.homeFrame = home.homePage(self)
 
 app = App()
 app.mainloop()
